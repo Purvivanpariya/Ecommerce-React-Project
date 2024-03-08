@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap');
+
+h1, h2, h3, h4, h5 { font-weight: 700; }
+a { 
+   color: var(--light); 
+   &:hover {      
+      color: var(--secondary); 
+   }
+}
+h5 { font-size:1.1rem; }
+/** Bootstrap Cards **/
+.card {  
+   border: 0px;
+   border-radius: .5rem;   
+   overflow: hidden;
+   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   will-change: transform, box-shadow;
+   margin-bottom: 1rem;
+   &:hover {
+      transform: translateY(-10px);
+   }
+   .card-title {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+   .card-body {
+      overflow: hidden;
+      padding-top: 1rem;
+      padding-bottom: .15rem;      
+      /* height: 100%; */
+   }
+   .card-footer {
+      border: 0px;
+      background-color: white;
+      font-size: .85rem;
+      color: var(--secondary);
+      padding-bottom: 1.25rem;
+   }
+}

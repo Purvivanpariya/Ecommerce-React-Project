@@ -1,0 +1,86 @@
+
+.user-card{
+    position:relative;
+    height:150px;
+    width:450px;
+    border:0.5px solid #080D33;
+    display:flex;
+    align-items:center;
+    box-sizing:border-box;
+    padding:16px;
+  }
+  
+  .user-card:after{
+    position:absolute;
+    content:'';
+    height:2px;
+    background:#080D33;
+    width:100%;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    transform:scale(0);
+    transition:transform 550ms ease;
+  }
+  
+  .user-card:hover::after{
+    transform:scale(1);
+  }
+  
+  .user-card p,.user-card div{
+    margin:0px;
+    padding:0px;
+  }
+  
+  .user-card .avatar,.user-card  .avatar img,.user-card  .avatar i{
+    height:100px;
+    width:100px;
+    border-radius:100%;
+  }
+  
+  .user-card .avatar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:20px;
+    font-size:4em;
+    color:#676a6c;
+  }
+  
+  .user-card .avatar i{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .user-card .details{
+    width:100%;
+    text-overflow:ellipsis;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  } 
+  
+  .user-card .details .name{
+    margin:0;
+    padding:0;
+    width:60%;
+    font-size:20px;
+    word-wrap:break-word;
+    color:black;
+  }
+  
+  .user-card .details .number{
+    margin:0;
+    padding:0;
+    color:#555;
+    display:flex;
+    align-items:center;
+    margin-top:10px;
+  }
+  
+  .user-card .details .number i{
+    margin-right:5px;
+  }
+  
+  
